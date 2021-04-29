@@ -22,7 +22,7 @@ steps:
     azureSubscription: 'Ps-ae-dev-test-SC'
     appType: 'webAppLinux'
     WebAppName: 'dev-app-env'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: '$(System.DefaultWorkingDirectory)'
 
 - task: DotNetCoreCLI@2
   inputs:
